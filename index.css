@@ -1,0 +1,64 @@
+/* GIVEN COLOR PALETTE
+#242582
+#553D67
+#F64C72
+#99738E
+#2F2FA2 
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2F2FA2;
+}
+
+.navbar {
+    li {
+        display: inline;
+    }
+
+    a {
+        float: right;
+        color: #F64C72;
+        text-align: center;
+        padding: 4px 12px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.navbar a:hover {
+    background-color: #242582;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #F64C72
+}
+
+h3 {
+    text-align: center;
+    color: #F64C72
+}
+
+p {
+    color: #969696;
+    padding: 10px
+}
+
+.email-button {
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    background-color: #99738E;
+    color: white;
+}
