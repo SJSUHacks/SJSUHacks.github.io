@@ -3,16 +3,20 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>SJSU Hacks</title>
 </head>
 
 <body>
     <div class="navbar">
-        <ul>
+        <!-- <ul>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#about">About</a></li>
-        </ul>
+        </ul> -->
+        <a href="#faq">FAQ</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#about">About</a>
 
     </div>
 
@@ -35,17 +39,33 @@
                 society.
             </p>
         </section>
-        <section id="about" style="height: 300px;">
+        <section id="about" style="height: 300px; text-align: center;">
             <h3>About</h3>
+            <p>text about sjsu hacks</p>
         </section>
         <section id="sponsors" style="height: 300px">
             <h3>Sponsors</h3>
             <div style="text-align: center;">
+                <p>Text about why to be a sponsor/convicing to be a sponsor</p>
                 <a href="mailto:youremail@example.com" class="email-button">Become a Sponsor</a>
             </div>
         </section>
         <section id="faq" style="height: 300px;">
-            <h3>FAQ</h3>
+            <h3>Frequently Asked Questions</h3>
+            <div class="faqgrid">
+                <div class="faqGridSide">
+                    <button class="questions">FAQ1</button>
+                    <p class="answers">faq1</p>
+                    <button class="questions">FAQ3</button>
+                    <p class="answers">Answer</p>
+                </div>
+                <div class="faqGridSide">
+                    <button class="questions">FAQ2</button>
+                    <p class="answers">Answer</p>
+                    <button class="questions">FAQ4</button>
+                    <p class="answers">Answer</p>
+                </div>
+            </div>
         </section>
     </div>
 </body>

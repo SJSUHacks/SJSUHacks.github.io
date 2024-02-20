@@ -10,14 +10,11 @@ html {
 }
 
 body {
-    background-color: #2F2FA2;
+    /* background: linear-gradient(135deg, #007bff, #ffffff, #ffd700); */
+    background: linear-gradient(40deg, #0055A2, #ffffff, #E5A823);
 }
 
 .navbar {
-    li {
-        display: inline;
-    }
-
     a {
         float: right;
         color: #F64C72;
@@ -26,12 +23,6 @@ body {
         text-decoration: none;
         font-size: 17px;
         border-radius: 5px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
     }
 }
 
@@ -42,7 +33,7 @@ body {
 h1 {
     text-align: center;
     font-size: 40px;
-    color: #F64C72
+    color: #333333
 }
 
 h3 {
@@ -61,4 +52,53 @@ p {
     border-radius: 5px;
     background-color: #99738E;
     color: white;
+}
+
+.faqgrid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    padding: 2px 50px;
+}
+
+.faqGridSide {
+    margin: 0;
+}
+
+.answers {
+    margin-top: 1px;
+    display: none;
+    padding: 0 18px;
+    overflow: hideen;
+}
+
+.questions {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 8px 50px;
+    cursor: pointer;
+    border: 2px solid;
+    margin: 4px 0;
+}
+
+.questions:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 40px;
+}
+
+.active,
+.questions:hover {
+    background-color: white;
 }
