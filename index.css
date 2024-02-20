@@ -1,23 +1,18 @@
-/* GIVEN COLOR PALETTE
-#242582
-#553D67
-#F64C72
-#99738E
-#2F2FA2 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    /* background: linear-gradient(135deg, #007bff, #ffffff, #ffd700); */
-    background: linear-gradient(40deg, #0055A2, #ffffff, #E5A823);
+    background-color: #f7fcff;
+    font-family: Lato;
 }
 
 .navbar {
     a {
         float: right;
-        color: #F64C72;
+        color: #0055A2;
         text-align: center;
         padding: 4px 12px;
         text-decoration: none;
@@ -27,18 +22,22 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #242582;
+    background-color: #939597;
 }
 
 h1 {
     text-align: center;
     font-size: 40px;
-    color: #333333
+    padding-top: 50px;
+    background: linear-gradient(30deg, #002f5d, #0055A2, #E5A823, #0055A2, #002f5d);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3 {
     text-align: center;
-    color: #F64C72
+    color: #0055A2
 }
 
 p {
@@ -50,11 +49,12 @@ p {
     text-decoration: none;
     padding: 10px 14px;
     border-radius: 5px;
-    background-color: #99738E;
+    background-color: #0055A2;
     color: white;
 }
 
 .faqgrid {
+    align-content: center;
     display: grid;
     text-align: center;
     grid-template-columns: 50% 50%;
@@ -101,4 +101,17 @@ p {
 .active,
 .questions:hover {
     background-color: white;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
