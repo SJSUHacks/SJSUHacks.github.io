@@ -49,7 +49,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: max(55px, 7vw);
     padding-top: 50px;
     padding-bottom: 0px;
     margin-bottom: 15px;
@@ -153,4 +153,9 @@ footer {
         padding: 0;
         margin: 0;
     }
+}
+
+section {
+    text-align: center;
+    font-size: max(17px, 1.6vw)
 }
