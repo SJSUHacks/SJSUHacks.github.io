@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@media screen and (max-width: 700px) {
+
+    /*styles when screen is 700px or smaller(what will show in big web browser*/
+    .faqGridSide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    /*styles when screen is 700 or bigger*/
+    .hide-on-desktop {
+        display: none;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -10,6 +25,8 @@ body {
 }
 
 .navbar {
+    padding-top: 5px;
+
     a {
         float: right;
         color: #0055A2;
@@ -126,4 +143,14 @@ p {
 footer {
     text-align: right;
     background-color: #0055A2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
 }
