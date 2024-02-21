@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
 
     /*styles when screen is 700px or smaller(what will show in big web browser*/
     .faqGridSide {
@@ -7,7 +7,7 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
 
     /*styles when screen is 700 or bigger*/
     .hide-on-desktop {
@@ -45,6 +45,9 @@ body {
 
 .content {
     padding: 2px 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -84,7 +87,6 @@ p {
     text-align: center;
     grid-template-columns: 50% 50%;
     column-gap: 10px;
-    /* padding: 2px 50px; */
 }
 
 .faqGridSide {
@@ -108,10 +110,12 @@ p {
     outline: none;
     transition: 0.2s;
     border-radius: 5px;
-    padding: 8px 50px;
+    display: block;
+    line-height: 40px;
     cursor: pointer;
     border: 2px solid;
     margin: 4px 0;
+    font-size: max(14px, 1.4vw);
 }
 
 .questions:after {
