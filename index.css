@@ -63,7 +63,8 @@ h1 {
 
 h3 {
     text-align: center;
-    color: #0055A2
+    color: #0055A2;
+    font-size: 3.2vw;
 }
 
 p {
@@ -98,6 +99,7 @@ p {
     display: none;
     padding: 0 18px;
     overflow: hideen;
+    font-size: max(13px, 1.1vw);
 }
 
 .questions {
