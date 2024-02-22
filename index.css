@@ -40,12 +40,12 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #939597;
+    background-color: rgb(226, 231, 234);
 }
 
 .content {
     padding: 2px 50px;
-    max-width: 1000px;
+    max-width: 79%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -109,13 +109,14 @@ p {
     border: none;
     outline: none;
     transition: 0.2s;
-    border-radius: 5px;
+    border-radius: 15px;
     display: block;
     line-height: 40px;
     cursor: pointer;
     border: 2px solid;
     margin: 4px 0;
-    font-size: max(14px, 1.4vw);
+    font-size: max(14px, 1.3vw);
+    padding: 10px
 }
 
 .questions:after {
@@ -128,7 +129,7 @@ p {
 
 .active,
 .questions:hover {
-    background-color: #a5a8aa;
+    background-color: #bbbec0;
 }
 
 .hidden {
@@ -161,5 +162,5 @@ footer {
 
 section {
     text-align: center;
-    font-size: max(17px, 1.6vw)
+    font-size: max(17px, 1.4vw)
 }
