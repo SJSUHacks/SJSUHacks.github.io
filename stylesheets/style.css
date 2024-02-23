@@ -80,6 +80,8 @@ p {
     font-weight: bold;
     background: linear-gradient(140deg, #E5A823, #0055A2, #E5A823);
     color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .faqgrid {
