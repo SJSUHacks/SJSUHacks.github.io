@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1050px) {
 
     /*styles when screen is 700px or smaller(what will show in big web browser*/
     .faqGridSide {
@@ -7,7 +7,7 @@
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1051px) {
 
     /*styles when screen is 700 or bigger*/
     .hide-on-desktop {
@@ -100,7 +100,7 @@ p {
     margin-top: 1px;
     display: none;
     padding: 0 18px;
-    overflow: hideen;
+    overflow: hidden;
     font-size: max(13px, 1.1vw);
 }
 
@@ -115,12 +115,14 @@ p {
     transition: 0.2s;
     border-radius: 15px;
     display: block;
-    line-height: 40px;
+    height: 50px;
     cursor: pointer;
     border: 2px solid;
     margin: 4px 0;
-    font-size: max(14px, 1.3vw);
-    padding: 10px
+    font-size: max(13px, 1.2vw);
+    padding: 10px;
+    /* padding: .3em calc(.74em - .4em) .3em .75em; */
+
 }
 
 .questions:after {
@@ -167,4 +169,19 @@ footer {
 section {
     text-align: center;
     font-size: max(17px, 1.4vw)
+}
+
+.officerPicture {
+    text-align: center;
+
+    a {
+        color: #0055A2;
+    }
+
+    img {
+        border-radius: 150%;
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+    }
 }
