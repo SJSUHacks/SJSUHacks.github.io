@@ -2,16 +2,16 @@
 @media screen and (max-width: 1050px) {
 
     /*styles when screen is 700px or smaller(what will show in big web browser*/
-    .faqGridSide {
-        display: none;
+    .faqgrid {
+        grid-template-columns: auto;
     }
 }
 
 @media screen and (min-width: 1051px) {
 
     /*styles when screen is 700 or bigger*/
-    .hide-on-desktop {
-        display: none;
+    .faqgrid {
+        grid-template-columns: 50% 50%;
     }
 }
 
@@ -88,13 +88,14 @@ p {
     align-content: center;
     display: grid;
     text-align: center;
-    grid-template-columns: 50% 50%;
     column-gap: 10px;
 }
 
 .faqGridSide {
     margin: 0;
 }
+
+.flexfaq {}
 
 .answers {
     margin-top: 1px;

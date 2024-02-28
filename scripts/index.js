@@ -19,3 +19,12 @@ for (var i = 0; i < questions.length; i++) {
         }
     });
 }
+
+// $(document).resize(function(){
+//     if(window.innerWidth < 1050){
+//         $('.faqgrid').addClass('flexfaq').removeClass('faqgrid');
+//     }
+//     else{
+//         $('.faqflex').addClass('faqGrid').removeClass('faqgrid');
+//     }
+// })
