@@ -6,10 +6,14 @@
     <title>SilconX</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@300&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
 </head>
 <body>
 <style>
@@ -19,6 +23,7 @@
         background: linear-gradient(#0956A3, #E6AC2D); /* Adjusted gradient to make blue last longer */
         background-attachment: fixed; /* Prevents the background from scrolling with the content */
         font-family: 'Outfit', sans-serif; /* Default font for the website */
+        scroll-behavior: smooth;
     }
     .navbar {
         display: flex;
@@ -55,17 +60,25 @@
 </div>
 <div style="height: 35%; width: 5%;"></div>
 
-<div class="header">
+<div class="header" id="canvas">
+   
     <div>
         Welcome to<br><span class="highlight">SiliconX</span> Hacks
     </div>
 
-    <button onclick="window.location.href='https://tally.so/r/w5z8yo'" style="background-color: #ffb800; color: white; padding: 12px 24px; font-size: 16px; border: 1px solid white;">
+    <!-- <button onclick="window.location.href='https://tally.so/r/w5z8yo'" style="background-color: #ffb800; color: white; padding: 12px 24px; font-size: 16px; border: 1px solid white;">
   Register HERE
-</button>
+</button> -->
 
-   <button onclick="window.location.href='mailto:ideas.sjsu@gmail.com'" style="background-color: #0956a3; color: white; padding: 12px 24px; font-size: 16px; border: 1px solid white;"> 
-       Sponsor Us </button>
+<button onclick="window.location.href='https://tally.so/r/w5z8yo'" class="button-59" role="button">Register!</button>
+
+
+   <!-- <button onclick="window.location.href='mailto:ideas.sjsu@gmail.com'" style="background-color: #0956a3; color: white; padding: 12px 24px; font-size: 16px; border: 1px solid white;"> 
+       Sponsor Us </button> -->
+
+    <!-- HTML !-->
+<button onclick="window.location.href='mailto:ideas.sjsu@gmail.com'" class="button-58" role="button">Sponsor Us</button>
+
 
 
 <style>
@@ -128,47 +141,95 @@
 </div>
 
 
-<div style="display: flex; justify-content: center; margin-top: 10%;"> 
-    <div style="flex: 0.35; background-color: #0956A3; color: white; padding: 20px; border-radius: 30px; border: 2px solid white;"> 
+<style>
+    @media (min-width: 768px) {
+        .event-schedule {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+        }
+        .day-schedule {
+            flex: 0.35;
+            background-color: #0956A3;
+            color: white;
+            padding: 20px;
+            border-radius: 30px;
+            border: 2px solid white;
+            margin: 0 10px; /* Added to give space between columns on larger screens */
+        }
+        .event-detail {
+            background-color: #CED1ED;
+            color: black;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+    }
+    @media (max-width: 767px) {
+        .event-schedule {
+            display: block;
+            margin-top: 10%;
+        }
+        .day-schedule {
+            background-color: #0956A3;
+            color: white;
+            padding: 20px;
+            border-radius: 30px;
+            border: 2px solid white;
+            margin-bottom: 20px; /* Added space between each day schedule on smaller screens */
+        }
+        .event-detail {
+            background-color: #CED1ED;
+            color: black;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+    }
+</style>
+
+<div class="event-schedule"> 
+    <div class="day-schedule"> 
         <h2 style="text-align: center;">Saturday, 27th</h2> 
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Event Commences</b><br>7am @  BBC 032(Wrist Bands & Check In)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Breakfast</b><br>8am - 9:30 am @  BBC 032 </p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Introducing Sponsors & Comp Track</b><br>9:30 - 10:30 ( BBC 032)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Hacking Begins</b><br>Students can work at MLK library & student union<br>(No location specifically, but stay close by)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Lunch</b><br>12:45 am - 2 pm ( BBC 032)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Dinner + DAY 1 Ends (Night's still young)</b><br>8 - 9:30 pm</p> 
         </div>
     </div> 
-    <div style="width: 10%"></div>
-    <div style="flex: 0.35; background-color: #0956A3; color: white; padding: 20px; border-radius: 30px; border: 2px solid white;"> 
+    <div class="day-schedule"> 
         <h2 style="text-align: center;">Sunday, 28th</h2> 
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Event Commences</b><br>7am @ SJSU  BBC 032( Check In)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Breakfast (1hr)</b><br>8am - 9:30 am @  BBC 032</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Hacking Begins</b><br>9:30 - 3 pm (Get ready to submit soon!)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Project Submission deadline @3:30</b><br>Set your project up at a booth and prepare to<br>present to a judge that will approach you.</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Finalists Announced + Stage presentation</b><br>5pm - 6:30pm (Get ready to submit soon!)</p> 
         </div>
-        <div style="background-color: #CED1ED; color: black; padding: 15px; margin-bottom: 10px; border-radius: 20px; border: 2px solid white;">
+        <div class="event-detail">
             <p><b>Dinner + Award Ceremony + Closing Keynote</b><br>6:30 - 7:45pm</p> 
         </div>
     </div> 
@@ -212,76 +273,74 @@
     </style> 
     <div class="faq-container"> 
         <div class="faq-item"> 
-            <div class="faq-question">When and where will SiliconX Hacks Hackathon take place?
-</div> 
-            <div class="faq-answer">The inaugural SJSU Hacks Hackathon will take place on Saturday April 27th-28th, at the Boccardo Business Center
-.</div> 
+            <div class="faq-question">When and where will SiliconX Hacks Hackathon take place?</div> 
+            <div class="faq-answer">The inaugural SJSU Hacks Hackathon will take place on Saturday April 27th-28th, at the Boccardo Business Center.</div> 
         </div> 
 
-        
-         <div class="faq-item"> 
-            <div class="faq-question">What should I bring to the hackathon?
-</div> 
-            <div class="faq-answer">Bring your creativity and gear! Laptops, chargers, notebooks—whatever you need for coding, designing, or presenting. Oh, and don't forget your  ID for check-in! 🎨💻🔌
-.</div> 
+        <div class="faq-item"> 
+            <div class="faq-question">What should I bring to the hackathon?</div> 
+            <div class="faq-answer">Bring your creativity and gear! Laptops, chargers, notebooks—whatever you need for coding, designing, or presenting. Oh, and don't forget your ID for check-in! 🎨💻🔌</div> 
         </div>
-
-        
-         <div class="faq-item"> 
-            <div class="faq-question">Do I need to come with a team?
-</div> 
-            <div class="faq-answer">No team? No problem! We'll pair you up with someone whose skills complement yours! 😎✨
-.</div> 
-        </div>
-
 
         <div class="faq-item"> 
-            <div class="faq-question">Will there be prizes?
-</div> 
-            <div class="faq-answer">Get ready for awesome prizes in our three main tracks (AI, Consumer, and Generalist)! We'll also have extra certificates for categories like Best Overall Hack, Most Creative Idea, Best Design, and more. Stay tuned! 🏆🚀
-.</div> 
+            <div class="faq-question">Do I need to come with a team?</div> 
+            <div class="faq-answer">No team? No problem! We'll pair you up with someone whose skills complement yours! 😎✨</div> 
         </div>
-        
 
         <div class="faq-item"> 
-            <div class="faq-question">How do I register for SiliconX Hacks?
-</div> 
-            <div class="faq-answer">To sign up, just fill out an application and wait for the green light to join the hackathon! Keep an eye on your inbox for updates on your application status
-.</div> 
+            <div class="faq-question">Will there be prizes?</div> 
+            <div class="faq-answer">Get ready for awesome prizes in our three main tracks (AI, Consumer, and Generalist)! We'll also have extra certificates for categories like Best Overall Hack, Most Creative Idea, Best Design, and more. Stay tuned! 🏆🚀</div> 
         </div>
-
 
         <div class="faq-item"> 
-            <div class="faq-question">Is there a cost to participate?
-</div> 
-            <div class="faq-answer">Nope
-.</div> 
+            <div class="faq-question">How do I register for SiliconX Hacks?</div> 
+            <div class="faq-answer">To sign up, just fill out an application and wait for the green light to join the hackathon! Keep an eye on your inbox for updates on your application status.</div> 
         </div>
-
 
         <div class="faq-item"> 
-            <div class="faq-question">Who can I contact for more information?
-</div> 
-            <div class="faq-answer">Got questions? Shoot us an email at ideas.sjsu@gmail.com or follow us on socials for updates! We're here to make sure you have a blast at SJSU Hacks Hackathon! 🚀✨
-.</div> 
+            <div class="faq-question">Is there a cost to participate?</div> 
+            <div class="faq-answer">Nope.</div> 
         </div>
 
-  
+        <div class="faq-item"> 
+            <div class="faq-question">Who can I contact for more information?</div> 
+            <div class="faq-answer">Got questions? Shoot us an email at ideas.sjsu@gmail.com or follow us on socials for updates! We're here to make sure you have a blast at SJSU Hacks Hackathon! 🚀✨</div> 
+        </div>
+
         <div class="faq-item"> 
             <div class="faq-question">Who can participate in SiliconX Hacks?</div> 
             <div class="faq-answer">SiliconX Hacks welcomes all SJSU students, clubs, and pals! Whether you're a coding ninja, a startup dreamer, a design fanatic, or just keen to learn and make cool stuff, this event is your jam. All backgrounds and skill levels, come on down! 🎉✨</div> 
         </div>
-        </div> 
+    </div> 
 
     <script> 
         const faqQuestions = document.querySelectorAll('.faq-question'); 
         faqQuestions.forEach(question => { 
             question.addEventListener('click', () => { 
                 const answer = question.nextElementSibling; 
-                answer.style.display = answer.style.display === 'none' ? 'block' : 'none'; 
+                if(answer.style.display === '' || answer.style.display === 'none') {
+                    answer.style.display = 'block';
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.display = 'none';
+                    answer.style.maxHeight = null;
+                }
             }); 
         }); 
     </script>
+    <style>
+        .faq-answer {
+            background-color: #FFF8E6; 
+            color: #333; 
+            padding: 20px; 
+            display: none; 
+            border-radius: 0 0 10px 10px; 
+            font-size: 18px; 
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+  <div style="height: 100px;"></div>
 
 <div style="margin-top: 10%;">
 
@@ -403,3 +462,4 @@
 
 </body>
 </html>
+
