@@ -164,8 +164,9 @@
 }
 
 .button-59 {
+  position: absolute;
   align-items: center;
-  background-color: #ffb800;
+  background-color: #ff5900;
   border: 2px solid #ffb700bc;
   box-sizing: border-box;
   color: #fff;
@@ -188,7 +189,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .button-59:focus {
