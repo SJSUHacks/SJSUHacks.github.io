@@ -1,489 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SilconX</title>
-    <link rel="icon" type="image/x-icon" href="./assets/SiliconX(X Logo) (1).png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@300&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-crossorigin="anonymous"></script>
+    <title>SiliconXHackathon</title>
+    <link rel="icon" type="image/x-icon" href="./assets/png/SiliconXHacksMeta.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
+
 <body>
-<style>
-    body, html {
-        height: 100%;
-        margin: 0;
-        background: linear-gradient(#0956A3, #E6AC2D); /* Adjusted gradient to make blue last longer */
-        background-attachment: fixed; /* Prevents the background from scrolling with the content */
-        font-family: 'Outfit', sans-serif; /* Default font for the website */
-        scroll-behavior: smooth;
-        
-    }
-    .navbar {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        background-color: transparent; /* Made navbar transparent */
-    }
-    .navbar a {
-        color: #D0BD11; /* Updated text color to #D0BD11 */
-        padding: 14px 20px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.5em;
-        z-index: 2
-    }
-    .header {
-        text-align: center;
-        font-weight: bold;
-        font-size: 6em;
-        color: white;
-        text-shadow: 2px 2px #E6AC2D;
-    }
-    .highlight {
-        color: #FFB800;
-    }
-    a {
-    color: white; /* Set the default color for the link */
-  }
+    <div class="header">
+        <button class="elevated index-10" id="sponsor">
+            Sponsor Us
+        </button>
+        <div class="content-holder index-10 " id="contentHolder">
+            <div class="contents move-anime" id="contents">
+                <h2>Silicon <span class="yellow">X</span> Hackathon</h2>
+                <div class="details">
+                    <div class="calendar">
+                        <img src="./assets/svg/calendar.svg" alt="calendar" class="logo" />
+                        April 2025
+                    </div>
+                    <div class="location">
+                        <img src="./assets/svg/location.svg" alt="location" class="logo">
+                        San Jose State University
+                    </div>
+                </div>
+                <div class="extra-text">
+                    Join the biggest Hackathon of Silicon Valley be the first to know when the applications are live!
+                </div>
+                <div class="input">
+                    <input type="text" name="emailInput" id="emailInput" onkeyup="validateEmail()" >
+                    <button class="submit-btn" id="submitBtn" disabled>→</button>
+                </div>
+            </div>
+        </div>
 
-</style>
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#poweredby">Schedule</a>
-    <a href="#FAQ">FAQ</a>
-    <a href="#Our Sponsors">Sponsors</a>
-   <!-- <a href="#Judges">Judges</a>
-    <a href="#Keynote">Keynote</a>
-    <a href="#Prizes">Prizes</a>
-    -->
-</div>
-<div style="height: 35%; width: 5%;"></div>
+        <div class="blossom">
+            <div class="sun"></div>
+        </div>
+        <div class="back-img">
+            <div class="alltrees">
+                <div class="tower">
+                    <img src="./assets/png/towerHall.png" alt="towerHall">
+                </div>
+                <div class="statue">
+                </div>
+            </div>
+            <div class="land">
+                <!-- <span class="text3d">
+                    Silicon
+                    <div class="x-bit" onclick="displayContent()">
+                        X
+                    </div>
+                    Hackathon
+                </span> -->
 
-<div class="header" id="canvas">
-   
-    <div>
-        Welcome to<br><span class="highlight">SiliconX</span> Hacks
+            </div>
+        </div>
     </div>
-    <!-- <button onclick="window.location.href='https://tally.so/r/w5z8yo'" style="background-color: #ffb800; color: white; padding: 12px 24px; font-size: 16px; border: 1px solid white;">
-  Register HERE
-</button> -->
-
-<button onclick="window.location.href='https://tally.so/r/w5z8yo'" class="button-59" role="button" target="_blank">Register!</button>
-
-
-   <!-- <button onclick="window.location.href='mailto:ideas.sjsu@gmail.com'" style="background-color: #0956a3; color: white; padding: 12px 24px; font-size: 16px; border: 1px solid white;"> 
-       Sponsor Us </button> -->
-
-    <!-- HTML !-->
-<button onclick="window.location.href='mailto:ideas.sjsu@gmail.com'" class="button-58" role="button">Sponsor Us</button>
-
-
-<p style="text-align: center; color: white; font-size: 20px; margin-top: 20px;">Registration closes on April 23</p>
-
-<style>
-    .sun-icon {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 200px; /* Adjust size as needed */
-        height: auto;
-        z-index: 2
-    }
-</style>
-<img src="./assets/SiliconX(X Logo) (1).png" alt="SXH logo" class="sun-icon"> 
-<!-- <style>
-    @keyframes float {
-        0%, 100% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-20px);
-        }
-    }
-    @keyframes moveRight {
-        0% {
-            left: -200px;
-        }
-        100% {
-            left: 100%;
-        }
-    }
-    .cloud {
-        position: absolute;
-        width: 150px; /* Adjust size as needed */
-        height: auto;
-        animation: float 6s ease-in-out infinite, moveRight 30s linear infinite;
-        z-index: 1; 
-    }
-    .cloud:nth-child(2) {
-        animation-duration: 7s, 40s; /* Slightly different timing for variation */
-    }
-    .cloud:nth-child(3) {
-        animation-duration: 8s, 35s; /* Slightly different timing for variation */
-    }
-</style>
-<img src="./assets/cloud1.svg" alt="Cloud" class="cloud" style="top: 0px; width: 25%;overflow: hidden">
-<img src="./assets/cloud1.svg" alt="Cloud" class="cloud" style="top: 600px; left: 200px; width: 20%;overflow: hidden">
-<img src="./assets/cloud1.svg" alt="Cloud" class="cloud" style="top: 150px; left: 400px; width: 55%;overflow: hidden">
---->
-</div>
-
-
-
-<div style="margin-top: 30%;">
-    <div style="background-color: white; width: 100%; height: 2px; margin: 20px 0;"></div>
-    <h2 id = "poweredby" style="text-align: center; text-shadow: 2px 2px #E6AC2D; color: white; font-size: 3em;">Powered By</h2>
-    <div style="text-align: center;">
-        <img src="./assets/SJSU.svg" alt="Image 1" style="vertical-align: middle;">
-        <span style="font-size: 24px; margin: 0 10px; color: white">&</span>
-        <img src="./assets/IDEASlogo.svg" alt="IDEAS logo" style="vertical-align: middle;">
-    </div>
-</div>
-
-
-<style>
-    @media (min-width: 768px) {
-        .event-schedule {
-            display: flex;
-            justify-content: center;
-            margin-top: 10%;
-        }
-        .day-schedule {
-            flex: 0.35;
-            background-color: #0956A3;
-            color: white;
-            padding: 20px;
-            border-radius: 30px;
-            border: 2px solid white;
-            margin: 0 10px; /* Added to give space between columns on larger screens */
-        }
-        .event-detail {
-            background-color: #CED1ED;
-            color: black;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-            border: 2px solid white;
-        }
-    }
-    @media (max-width: 767px) {
-        .event-schedule {
-            display: block;
-            margin-top: 10%;
-        }
-        .day-schedule {
-            background-color: #0956A3;
-            color: white;
-            padding: 20px;
-            border-radius: 30px;
-            border: 2px solid white;
-            margin-bottom: 20px; /* Added space between each day schedule on smaller screens */
-        }
-        .event-detail {
-            background-color: #CED1ED;
-            color: black;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 20px;
-            border: 2px solid white;
-        }
-    }
-</style>
-
-<div class="event-schedule"> 
-    <div class="day-schedule"> 
-        <h2 style="text-align: center;">Saturday, 27th</h2> 
-        <div class="event-detail">
-            <p><b>Day 1 Event Commences</b><br>7:00 am @ BBC 032 (Wrist Bands & Check-In)</p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Breakfast</b><br>8:00 am - 9:00 am </p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Introducing Sponsors & Comp Track</b><br>9:00 am - 10:30 am </p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Hacking Begins</b><br>Students can work at MLK library & Student Union<br>(No specific location, but stay close by)</p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Lunch + keynote speaker: how to use Jetson</b><br>12:00 pm - 2:00 pm </p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Dinner + DAY 1 Ends </b><br>6:00 pm - 8:00 pm</p> 
-        </div>
-    </div> 
-    <div class="day-schedule"> 
-        <h2 style="text-align: center;">Sunday, 28th</h2> 
-        <div class="event-detail">
-            <p><b>Day 2 Event Commences</b><br>7:00 am @ BBC 032(Check In)</p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Breakfast</b><br>8:00 am - 9:30 am </p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Hacking Begins</b><br>9:30 am - 3:00 pm </p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Keynote Speaker</b><br>12:00 pm - 1:00 pm </p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Project Submission Deadline @ 3:00 pm</b><br>Set your project up at a booth and prepare to<br>present to a judge that will approach you.</p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Finalists Announced + Stage Presentation</b><br> 5:00 pm - 6:30 pm</p> 
-        </div>
-        <div class="event-detail">
-            <p><b>Dinner + Award Ceremony + Closing Keynote</b><br>6:30 pm - 8:00 pm</p> 
-        </div>
-    </div> 
-</div>
-
-<div style="margin-top: 10%;">
-
-<h2 id = "FAQ" style="text-align: center; text-shadow: 2px 2px #E6AC2D; color: white; font-size: 3em;">FAQ</h2>
-
-
-    <style> 
-        .faq-container { 
-            max-width: 800px; /* Increased max-width */
-            margin: 0 auto; 
-            font-family: Arial, sans-serif; 
-            font-size: 18px; /* Increased font size */
-        } 
-        .faq-item { 
-            margin-bottom: 20px; /* Increased margin-bottom */
-        } 
-        .faq-question { 
-            background-color: #F3D381; 
-            color: #333; 
-            padding: 20px; /* Increased padding */
-            cursor: pointer; 
-            border-radius: 10px; /* Increased border-radius */
-            transition: background-color 0.3s; 
-            font-size: 20px; /* Increased font size */
-        } 
-        .faq-question:hover { 
-            background-color: #EFC66A; 
-        } 
-        .faq-answer { 
-            background-color: #FFF8E6; 
-            color: #333; 
-            padding: 20px; /* Increased padding */
-            display: none; 
-            border-radius: 10px; /* Increased border-radius */
-            font-size: 18px; /* Increased font size */
-        } 
-    </style> 
-    <div class="faq-container"> 
-        <div class="faq-item"> 
-            <div class="faq-question">When and where will SiliconX Hacks Hackathon take place?</div> 
-            <div class="faq-answer">The inaugural SJSU Hacks Hackathon will take place on Saturday April 27th-28th, at the Boccardo Business Center.</div> 
-        </div> 
-
-        <div class="faq-item"> 
-            <div class="faq-question">What should I bring to the hackathon?</div> 
-            <div class="faq-answer">Bring your creativity and gear! Laptops, chargers, notebooks—whatever you need for coding, designing, or presenting. Oh, and don't forget your ID for check-in!</div> 
-        </div>
-
-        <div class="faq-item"> 
-            <div class="faq-question">Do I need to come with a team?</div> 
-            <div class="faq-answer">No team? No problem! We'll pair you up with someone whose skills complement yours!</div> 
-        </div>
-
-        <div class="faq-item"> 
-            <div class="faq-question">Will there be prizes?</div> 
-            <div class="faq-answer">Get ready for awesome prizes in our two main tracks (AI and Generalist)! We'll also have extra certificates for categories like Best Overall Hack, Most Creative Idea, Best Design, and more.</div> 
-        </div>
-
-        <div class="faq-item"> 
-            <div class="faq-question">How do I register for SiliconX Hacks?</div> 
-            <div class="faq-answer">To sign up, just fill out an application and wait for the green light to join the hackathon! Keep an eye on your inbox for updates on your application status.</div> 
-        </div>
-
-        <div class="faq-item"> 
-            <div class="faq-question">Is there a cost to participate?</div> 
-            <div class="faq-answer">Nope!</div> 
-        </div>
-
-        <div class="faq-item"> 
-            <div class="faq-question">Who can I contact for more information?</div> 
-            <div class="faq-answer">Got questions? Shoot us an email at ideas.sjsu@gmail.com or follow us on socials for updates! We're here to make sure you have a blast at SJSU Hacks Hackathon!</div> 
-        </div>
-
-        <div class="faq-item"> 
-            <div class="faq-question">Who can participate in SiliconX Hacks?</div> 
-            <div class="faq-answer">SiliconX Hacks welcomes all SJSU students, clubs, and pals! Whether you're a coding ninja, a startup dreamer, a design fanatic, or just keen to learn and make cool stuff, this event is your jam. All backgrounds and skill levels, come on down! 🎉✨</div> 
-        </div>
-    </div> 
-
-    <script> 
-        const faqQuestions = document.querySelectorAll('.faq-question'); 
-        faqQuestions.forEach(question => { 
-            question.addEventListener('click', () => { 
-                const answer = question.nextElementSibling; 
-                if(answer.style.display === '' || answer.style.display === 'none') {
-                    answer.style.display = 'block';
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                } else {
-                    answer.style.display = 'none';
-                    answer.style.maxHeight = null;
-                }
-            }); 
-        }); 
-    </script>
-    <style>
-        .faq-answer {
-            background-color: #FFF8E6; 
-            color: #333; 
-            padding: 20px; 
-            display: none; 
-            border-radius:10px 10px; 
-            font-size: 18px; 
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-    </style>
-  <div style="height: 100px;"></div>
-
-<div style="margin-top: 10%;">
-
-    <h2 style="text-align: center; text-shadow: 2px 2px #E6AC2D; color: white; font-size: 3em;">Partners</h2> 
-    
-    
-    <div style="text-align: center;">
-        <img src="./assets/LucasCollegeLogo.png" alt="Partner Logo" style="max-width: 60%; height: auto;">
-    </div>
-
-    
-    <div style="text-align: center;">
-        <img src="./assets/SVCE_new_logo-removebg-preview.png" alt="Partner Logo" style="max-width: 60%; height: auto;">
-    </div>
-
-    
-    <div style="margin-top: 10%;">
-
-        <h2 id = "Our Sponsors" style="text-align: center; text-shadow: 2px 2px #E6AC2D; color: white; font-size: 3em;">Our Sponsors</h2>
-
-        <div style="text-align: center;">
-            <a target= "_blank" href = "https://apps.apple.com/us/app/jetson-be-your-own-boss/id1621242994?mt=8"><img src="./assets/jetsonLogo.svg" alt="Sponsor Logo" style="max-width: 100%; height: auto;"></a>
-        </div>
-
-        <div style="text-align: center;">
-            <a target= "_blank" href="https://creditcliq.com"><img src="./assets/CreditCliq_Logo.png" alt="Sponsor Logo" style="max-width: 60%; height: auto;"></a>
-        </div>
-
-         <div style="text-align: center;">
-            <a target= "_blank" href="https://growme.ai"><img src="./assets/growmelogo_white_text.png" alt="Sponsor Logo" style="max-width: 60%; height: auto;"></a>
-        </div>
-
-
-
-
-
-        
-
-
-                
-        <div style="margin-top: 10%;">
-
-            <h2 style="text-align: center; text-shadow: 2px 2px #E6AC2D; color: white; font-size: 3em;">Meet the Team!</h2>
-            <div id="banner">
-                <!-- Include FontAwesome CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<style>
-    .image-container {
-        text-align: center;
-    }
-
-    .inline-block {
-        display: inline-block;
-        margin-right: 20px; /* Adjust this value as needed for the desired spacing */
-        vertical-align: top; /* Align text to top of the container */
-        text-align: center; /* Center align the text */
-    }
-
-    /* The last image should not have right margin */
-    .inline-block:last-child {
-        margin-right: 0;
-    }
-
-    /* Style for the name text */
-    .inline-block p {
-        color: white;
-        margin-bottom: 5px; /* Adjust this value for spacing between name and icon */
-    }
-
-    /* Style for the LinkedIn icon */
-    .inline-block .linkedin-icon {
-        color: #0077B5; /* LinkedIn blue color */
-    }
-</style>
-
-<div class="image-container">
-    <div class="inline-block">
-        <img src="./assets/Ryan.png">
-        <p><a target="_blank" href="https://www.linkedin.com/in/ryan-nikopour-080738280/">Ryan Nikopour</a></p>
-    </div>
-
-    <div class="inline-block">
-        <img src="./assets/Angel.png">
-        <p><a target="_blank" href="https://www.linkedin.com/in/angel-idusuyi-b2b7aa17a/">Angel Idusuyi</a></p>
-    </div>
-
-    <div class="inline-block">
-        <img src="./assets/Andrea.png">
-        <p><a target="_blank" href="https://www.linkedin.com/in/andreacabrerasanchez/">Andrea Cabrera-Sanchez</a></p>
-    </div>
-</div>
-
-<div class="image-container">
-    <div class="inline-block">
-        <img src="./assets/Hamza.png">
-        <p><a target=_blank href= "https://www.linkedin.com/in/muhammad-hamza3401/">Muhammad Hamza</a></p>
-    </div>
-
-    <div class="inline-block">
-        <img src="./assets/Sai.png">
-        <p> <a target="_blank" href = "https://www.linkedin.com/in/sai-krishna-mittapalli-59b749180/">Sai Krishna Mittapalli</a></p>
-    </div>
-
-    <div class="inline-block">
-        <img src="./assets/Dr Basu.png">
-        <p> <a target="_blank" href ="https://www.linkedin.com/in/anu-basu-3ab594/">Dr. Anu Basu</a></p>
-    </div>
-</div>
-
-
-<!-- Include FontAwesome JS (for icons) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
-                
-<h2 style="text-align: center; text-shadow: 2px 2px #E6AC2D; color: white; font-size: 3em;">Contributors </h2>    
-
-<p style="text-align: center; color: white;">Jordan Fung, Shabd Veyyakula, and Pranav Krishna</p>
-
-
-    <div style="height: 50%;"></div>
-
-<footer style="text-align: center; margin-top: 5%;">
-    <p>Copyright &copy; 2024 SiliconX hacks</p>
-</footer>
-
-    
-
 </body>
-</html>
 
+</html>
