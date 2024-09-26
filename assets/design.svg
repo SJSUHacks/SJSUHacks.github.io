@@ -295,11 +295,11 @@
       fill: #858585;
       }
       99% {
+      transform: translate(100vw); /* Move to the right of the screen */
       fill: #858585;
       }
       100%{
-      transform: translate(100vw); /* Move to the right of the screen */
-      opacity: 0;
+      fill: none;
       }
       }
 
