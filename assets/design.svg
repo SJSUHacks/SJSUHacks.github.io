@@ -270,7 +270,7 @@
       }
 
       .cls-65 {
-      fill: #858585;
+      fill: none;
       fill-rule: evenodd;
       animation: move-flight 5s linear 1;
       }
@@ -292,9 +292,14 @@
       @keyframes move-flight {
       0% {
       transform: translate(-100%, 200px); /* Start off screen */
+      fill: #858585;
       }
-      100% {
+      99% {
+      fill: #858585;
+      }
+      100%{
       transform: translate(100vw); /* Move to the right of the screen */
+      opacity: 0;
       }
       }
 
