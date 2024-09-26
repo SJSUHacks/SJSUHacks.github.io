@@ -65,6 +65,7 @@
 
       .cls-23 {
       clip-path: url(#clippath-4);
+      animation: move-right 60s linear infinite;
       }
 
       .cls-24 {
@@ -249,6 +250,7 @@
 
       .cls-60 {
       clip-path: url(#clippath-2);
+      animation: move-right 30s linear infinite;
       }
 
       .cls-61 {
@@ -268,14 +270,34 @@
       }
 
       .cls-65 {
-      transform: translate(100px, 70px);
       fill: #858585;
       fill-rule: evenodd;
+      animation: move-flight 5s linear 1;
       }
 
       .cls-66 {
       clip-path: url(#clippath);
+      animation: move-right 60s linear infinite;
       }
+
+      @keyframes move-right {
+      0% {
+      transform: translate(0); /* Start off screen */
+      }
+      100% {
+      transform: translate(100vw); /* Move to the right of the screen */
+      }
+      }
+
+      @keyframes move-flight {
+      0% {
+      transform: translate(-100%, 200px); /* Start off screen */
+      }
+      100% {
+      transform: translate(100vw); /* Move to the right of the screen */
+      }
+      }
+
     </style>
     <clipPath id="clippath">
       <path class="cls-18"

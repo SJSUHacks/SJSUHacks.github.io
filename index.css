@@ -47,6 +47,8 @@ body {
   font-weight: bolder;
   font-size: 16px;
   text-align: center;
+  font-size: 20px;
+
 }
 
 .yellow {
@@ -62,8 +64,7 @@ body {
 
   color: black;
   font-weight: 600;
-  font-size: 16px;
-
+  font-size: 20px;
 }
 
 .details .info {
@@ -102,7 +103,7 @@ body {
 
 .input input::placeholder {
   color: white;
-
+  font-size: small;
 }
 
 .input .submit-btn {
@@ -205,10 +206,15 @@ body {
 @media screen and (orientation: landscape) and (max-width: 700px) {
 
   .holder {
-    top: 7rem
+    top: 4.5rem
+  }
+
+  .details{
+    font-size: 16px;
   }
 
   .extra-text {
     color: black;
+    font-size: 16px;
   }
 }
