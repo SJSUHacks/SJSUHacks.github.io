@@ -206,7 +206,7 @@ body {
 @media screen and (orientation: landscape) and (max-width: 700px) {
 
   .holder {
-    top: 4.5rem
+    top: 2rem
   }
 
   .details{
