@@ -90,10 +90,9 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   border: none;
-  font-size: larger;
+  font-size: x-large;
   color: white;
-  /* outline: 2px solid whitesmoke; */
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
 }
 
@@ -103,7 +102,7 @@ body {
 
 .input input::placeholder {
   color: white;
-  font-size: small;
+  font-size: medium;
 }
 
 .input .submit-btn {
@@ -206,7 +205,7 @@ body {
 @media screen and (orientation: landscape) and (max-width: 1100px) {
 
   .holder {
-    top: 4.5rem
+    top: 5rem
   }
 
   .details{
