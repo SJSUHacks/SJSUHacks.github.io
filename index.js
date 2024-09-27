@@ -8,8 +8,14 @@ const customAlert = document.getElementById("customAlert");
 const closeAlertBtn = document.getElementById("closeAlertBtn");
 const alertMessage = document.getElementById("alertMessage");
 
+const emailId = "organiser@siliconxhacks.com";
+
+export function goToEmail() {
+    window.open(`mailto:${emailId}`, _blank);
+}
+
 // Email validation function
-function validateEmail() {
+export function validateEmail() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailRegex.test(emailInput.value)) {
@@ -20,7 +26,7 @@ function validateEmail() {
 }
 
 // Function to add email to Firestore collection
-function addEmail() {
+export function addEmail() {
     addDoc(collection(db, "emailsForNewsLetter"), {
         email: emailInput.value,
         timestamp: new Date(),
