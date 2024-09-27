@@ -285,7 +285,7 @@
       transform: translateX(-90%); /* Start off screen */
       }
       100% {
-      transform: translateX(100vw); /* Move to the right of the screen */
+      transform: translateX(100%); /* Move to the right of the screen */
       }
       }
 
@@ -294,7 +294,7 @@
       transform: translateX(-20%); /* Start off screen */
       }
       100% {
-      transform: translateX(100vw); /* Move to the right of the screen */
+      transform: translateX(100%); /* Move to the right of the screen */
       }
       }
 
@@ -303,7 +303,7 @@
       transform: translateX(-50%); /* Start off screen */
       }
       100% {
-      transform: translateX(200vw); /* Move to the right of the screen */
+      transform: translateX(100%); /* Move to the right of the screen */
       }
       }
 
