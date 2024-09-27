@@ -65,7 +65,7 @@
 
       .cls-23 {
       clip-path: url(#clippath-4);
-      animation: move-right 60s linear infinite;
+      animation: move-cls-23 20s linear infinite;
       }
 
       .cls-24 {
@@ -250,7 +250,7 @@
 
       .cls-60 {
       clip-path: url(#clippath-2);
-      animation: move-right 30s linear infinite;
+      animation: move-cls-60 40s linear infinite;
       }
 
       .cls-61 {
@@ -277,15 +277,33 @@
 
       .cls-66 {
       clip-path: url(#clippath);
-      animation: move-right 60s linear infinite;
+      animation: move-cls-66 30s linear infinite;
       }
 
-      @keyframes move-right {
+      @keyframes move-cls-23 {
       0% {
-      transform: translate(0); /* Start off screen */
+      transform: translateX(-90%); /* Start off screen */
       }
       100% {
-      transform: translate(100vw); /* Move to the right of the screen */
+      transform: translateX(100vw); /* Move to the right of the screen */
+      }
+      }
+
+      @keyframes move-cls-60 {
+      0% {
+      transform: translateX(-20%); /* Start off screen */
+      }
+      100% {
+      transform: translateX(100vw); /* Move to the right of the screen */
+      }
+      }
+
+      @keyframes move-cls-66 {
+      0% {
+      transform: translateX(-50%); /* Start off screen */
+      }
+      100% {
+      transform: translateX(200vw); /* Move to the right of the screen */
       }
       }
 
