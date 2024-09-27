@@ -313,7 +313,7 @@
       fill: #858585;
       }
       99% {
-      transform: translate(100vw); /* Move to the right of the screen */
+      transform: translate(100%); /* Move to the right of the screen */
       fill: #858585;
       }
       100%{
