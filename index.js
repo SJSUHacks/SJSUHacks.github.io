@@ -11,7 +11,7 @@ const alertMessage = document.getElementById("alertMessage");
 const emailId = "organiser@siliconxhacks.com";
 
 export function goToEmail() {
-    window.open(`mailto:${emailId}`, _blank);
+    window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${emailId}&tf=cm`, _blank);
 }
 
 // Email validation function
