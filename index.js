@@ -7,15 +7,16 @@ const submitBtn = document.getElementById("submitBtn");
 const customAlert = document.getElementById("customAlert");
 const closeAlertBtn = document.getElementById("closeAlertBtn");
 const alertMessage = document.getElementById("alertMessage");
+const sponsorBtn = document.getElementById('sponsor');
 
 const emailId = "organiser@siliconxhacks.com";
 
-export function goToEmail() {
-    window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${emailId}&tf=cm`, _blank);
+function goToEmail() {
+    window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${emailId}&tf=cm`, "_blank");
 }
 
 // Email validation function
-export function validateEmail() {
+function validateEmail() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailRegex.test(emailInput.value)) {
@@ -26,7 +27,7 @@ export function validateEmail() {
 }
 
 // Function to add email to Firestore collection
-export function addEmail() {
+function addEmail() {
     addDoc(collection(db, "emailsForNewsLetter"), {
         email: emailInput.value,
         timestamp: new Date(),
@@ -66,3 +67,5 @@ emailInput.addEventListener('keypress', function (event) {
 
 // Event listener for button click to add email
 submitBtn.addEventListener('click', addEmail);
+
+sponsorBtn.addEventListener('click', goToEmail);
