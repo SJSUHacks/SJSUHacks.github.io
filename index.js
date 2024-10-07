@@ -9,7 +9,7 @@ const closeAlertBtn = document.getElementById("closeAlertBtn");
 const alertMessage = document.getElementById("alertMessage");
 const sponsorBtn = document.getElementById('sponsor');
 
-const emailId = "organiser@siliconxhacks.com";
+const emailId = "organizer@siliconxhacks.com";
 
 function goToEmail() {
     window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${emailId}&tf=cm`, "_blank");
