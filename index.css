@@ -7,7 +7,7 @@ body {
 
   background: #ffde59;
   overflow: hidden;
-  font-family: "Fredoka", system-ui;
+  font-family: "Poppins", system-ui;
   letter-spacing: 2px;
 }
 
@@ -23,6 +23,9 @@ body {
   width: 30vw;
 
   position: absolute;
+  text-align: center;
+  font-size: 56px;
+  top: 5%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -219,5 +222,10 @@ body {
 
   .extra-text {
     font-size: 16px;
+  }
+
+  .logo {
+    top: 0;
+    font-size: 45px;
   }
 }
